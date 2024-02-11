@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvFromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerBaseCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFromLabel" />
+
+    <TextView
+        android:id="@+id/tvToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:layout_below="@id/spinnerBaseCurrency"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTargetCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvToLabel" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/spinnerTargetCurrency"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@id/etAmount"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+
+
+    <TextView
+        android:id="@+id/tvConvertedAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConvert"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:text="Converted amount will appear here"/>
+
+    <Button
+        android:id="@+id/btnShowDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Details"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvConvertedAmount"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

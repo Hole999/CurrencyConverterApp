@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Symbol:"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_below="@id/tvSymbol"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvSymbolNative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Symbol Native:"
+        android:layout_below="@id/tvName"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvDecimalDigits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decimal Digits:"
+        android:layout_below="@id/tvSymbolNative"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvRounding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rounding:"
+        android:layout_below="@id/tvDecimalDigits"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code:"
+        android:layout_below="@id/tvRounding"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvNamePlural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name Plural:"
+        android:layout_below="@id/tvCode"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:layout_below="@id/tvNamePlural"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvCountries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Countries:"
+        android:layout_below="@id/tvType"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
